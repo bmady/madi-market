@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern WordPress Theme</title>
+    <!-- Main stylesheet would be linked here -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font imports would go here -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Area -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="#">
+                        <img src="/api/placeholder/180/60" alt="Site Logo">
+                    </a>
+                </div>
+                
+                <!-- Main Navigation -->
+                <nav class="main-navigation">
+                    <ul class="menu">
+                        <li class="menu-item current-menu-item"><a href="#">Home</a></li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Portfolio</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Grid Layout</a></li>
+                                <li><a href="#">Masonry</a></li>
+                                <li><a href="#">Single Project</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">About</a></li>
+                        <li class="menu-item"><a href="#">Services</a></li>
+                        <li class="menu-item"><a href="#">Blog</a></li>
+                        <li class="menu-item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Creative Multipurpose Theme</h1>
+                <p class="hero-subtitle">Build beautiful, responsive websites with our powerful theme</p>
+                <div class="hero-buttons">
+                    <a href="#" class="button button-primary">Get Started</a>
+                    <a href="#" class="button button-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/api/placeholder/800/500" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Amazing Features</h2>
+                <p class="section-description">Discover what makes our theme stand out from the crowd</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Responsive Design</h3>
+                    <p class="feature-text">Looks perfect on all devices, from mobile to desktop.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Multiple Layouts</h3>
+                    <p class="feature-text">Choose from a variety of layout options for your content.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Visual Composer</h3>
+                    <p class="feature-text">Build your pages visually with drag-and-drop ease.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">WooCommerce Ready</h3>
+                    <p class="feature-text">Fully compatible with the most popular e-commerce plugin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-description">Check out some of our latest work</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="web">Web Design</button>
+                <button class="filter-button" data-filter="branding">Branding</button>
+                <button class="filter-button" data-filter="photography">Photography</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="/api/placeholder/400/300" alt="Portfolio Item">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h4>Project Title</h4>
+                                <p>Web Design</p>
+                                <a href="#" class="overlay-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="/api/placeholder/400/300" alt="Portfolio Item">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h4>Project Title</h4>
+                                <p>Branding</p>
+                                <a href="#" class="overlay-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="photography">
+                    <div class="portfolio-image">
+                        <img src="/api/placeholder/400/300" alt="Portfolio Item">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h4>Project Title</h4>
+                                <p>Photography</p>
+                                <a href="#" class="overlay-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="/api/placeholder/400/300" alt="Portfolio Item">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h4>Project Title</h4>
+                                <p>Web Design</p>
+                                <a href="#" class="overlay-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">Testimonials from satisfied customers</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"This theme is absolutely amazing! So easy to customize and looks great on all devices. The support team is also incredibly helpful."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Client" class="author-image">
+                        <div class="author-info">
+                            <h4 class="author-name">John Smith</h4>
+                            <p class="author-title">CEO, Company Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"We've tried many WordPress themes, but this one stands out for its flexibility and modern design. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Client" class="author-image">
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah Johnson</h4>
+                            <p class="author-title">Marketing Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest News</h2>
+                <p class="section-description">Stay updated with our latest articles and news</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/400/250" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">May 7, 2025</span>
+                            <span class="blog-category">Design</span>
+                        </div>
+                        <h3 class="blog-title"><a href="#">Web Design Trends for 2025</a></h3>
+                        <p class="blog-excerpt">Discover the latest trends in web design that will dominate the industry in 2025.</p>
+                        <a href="#" class="blog-read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/400/250" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">May 5, 2025</span>
+                            <span class="blog-category">Development</span>
+                        </div>
+                        <h3 class="blog-title"><a href="#">Essential WordPress Plugins for Every Site</a></h3>
+                        <p class="blog-excerpt">A curated list of must-have WordPress plugins to enhance functionality and security.</p>
+                        <a href="#" class="blog-read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/400/250" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">May 1, 2025</span>
+                            <span class="blog-category">Business</span>
+                        </div>
+                        <h3 class="blog-title"><a href="#">How to Increase Conversion Rates</a></h3>
+                        <p class="blog-excerpt">Practical tips to optimize your website for better conversion rates and ROI.</p>
+                        <a href="#" class="blog-read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to get started?</h2>
+                <p class="cta-text">Join thousands of satisfied customers who are already using our theme</p>
+                <a href="#" class="button button-primary button-large">Purchase Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget">
+                    <div class="widget-title">About Us</div>
+                    <div class="widget-content">
+                        <p>We create premium WordPress themes with a focus on design, functionality, and user experience.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-widget">
+                    <div class="widget-title">Quick Links</div>
+                    <div class="widget-content">
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-widget">
+                    <div class="widget-title">Contact Info</div>
+                    <div class="widget-content">
+                        <ul class="contact-info">
+                            <li>
+                                <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <span class="contact-text">123 Street Name, City, Country</span>
+                            </li>
+                            <li>
+                                <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                                <span class="contact-text">+1 (123) 456-7890</span>
+                            </li>
+                            <li>
+                                <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                                <span class="contact-text">info@example.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-widget">
+                    <div class="widget-title">Newsletter</div>
+                    <div class="widget-content">
+                        <p>Subscribe to our newsletter to receive updates and news.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Modern Theme. All Rights Reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </a>
+
+    <!-- JavaScript would be included here -->
+    <script src="scripts.js"></script>
+</body>
+</html>
