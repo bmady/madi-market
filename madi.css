@@ -1,190 +1,152 @@
-.features-section {
-    padding: 100px 0;
-    background-color: var(--white);
+/* Ümumi stillər */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+body {
+  background-color: #ffffff;
 }
 
-.feature-box {
-    text-align: center;
-    padding: 30px;
-    border-radius: 8px;
-    transition: var(--transition);
-    box-shadow: var(--box-shadow);
+/* Yuxarı hissə - Top Bar */
+.top-bar {
+  background-color: #222222;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.feature-box:hover {
-    transform: translateY(-10px);
+.logo-container {
+  margin-left: 20px;
 }
 
-.feature-icon {
-    margin-bottom: 20px;
-    color: var(--primary-color);
+.logo {
+  height: 30px;
 }
 
-.feature-title {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+.buy-button {
+  background-color: #79b530;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.feature-text {
-    color: var(--light-text);
-    margin-bottom: 0;
+/* Naviqasiya paneli */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* ====================== 5. Portfolio Section ====================== */
-
-.portfolio-section {
-    padding: 100px 0;
-    background-color: var(--light-bg);
+.site-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
 }
 
-.portfolio-filter {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
+.menu-items {
+  display: flex;
+  list-style: none;
 }
 
-.filter-button {
-    background: transparent;
-    border: none;
-    padding: 8px 20px;
-    margin: 0 5px 10px;
-    cursor: pointer;
-    font-size: 1rem;
-    color: var(--text-color);
-    transition: var(--transition);
-    border-radius: 30px;
+.menu-items li {
+  margin-left: 20px;
 }
 
-.filter-button:hover,
-.filter-button.active {
-    background-color: var(--primary-color);
-    color: var(--white);
+.menu-items a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+/* Əsas məzmun hissəsi */
+.main-content {
+  text-align: center;
+  padding: 100px 20px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.portfolio-item {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
+.headline {
+  font-size: 56px;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 800px;
 }
 
-.portfolio-image {
-    position: relative;
-    overflow: hidden;
+.description {
+  font-size: 18px;
+  color: #666;
+  max-width: 800px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
-.portfolio-image img {
-    transition: var(--transition);
+.cta-button {
+  background-color: #1357de;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-.portfolio-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--overlay-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: var(--transition);
+/* Alt menyu */
+.footer-menu {
+  background-color: #222222;
+  padding: 15px 0;
+  text-align: center;
 }
 
-.portfolio-item:hover .portfolio-image img {
-    transform: scale(1.1);
+.category-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
-.portfolio-item:hover .portfolio-overlay {
-    opacity: 1;
+.category-menu li {
+  margin: 0 15px;
 }
 
-.overlay-content {
-    text-align: center;
-    color: var(--white);
-    padding: 20px;
+.category-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
 }
 
-.overlay-content h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* İkonlar paneli */
+.sidebar-icons {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.overlay-content p {
-    margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.8);
+.icon {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.overlay-link {
-    display: inline-block;
-    color: var(--white);
-    border: 2px solid var(--white);
-    padding: 8px 20px;
-    border-radius: 30px;
-    transition: var(--transition);
-}
-
-.overlay-link:hover {
-    background-color: var(--white);
-    color: var(--primary-color);
-}
-
-/* ====================== 6. Testimonials Section ====================== */
-
-.testimonials-section {
-    padding: 100px 0;
-    background-color: var(--white);
-}
-
-.testimonials-slider {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.testimonial-item {
-    background-color: var(--light-bg);
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: var(--box-shadow);
-    margin-bottom: 30px;
-}
-
-.testimonial-content {
-    margin-bottom: 20px;
-    font-style: italic;
-    color: var(--text-color);
-    position: relative;
-    padding: 0 20px;
-}
-
-.testimonial-content::before,
-.testimonial-content::after {
-    content: '"';
-    font-size: 50px;
-    color: rgba(0, 0, 0, 0.1);
-    line-height: 1;
-    position: absolute;
-}
-
-.testimonial-content::before {
-    top: 0;
-    left: 0;
-}
-
-.testimonial-content::after {
-    bottom: -20px;
-    right: 0;
-}
-
